@@ -1,0 +1,31 @@
+/* universal selector */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#headshot-img{
+    max-width: 15vw;
+    position: relative;
+    left: 30px;
+}
+
+path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+
+  /* Draw once and done. */
+  /* animation: dash 5s linear forwards; */
+
+  /* Keep drawing */
+  animation: dash 5s ease-in-out infinite alternate;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
