@@ -31,9 +31,29 @@ path {
 }
 
 body {
-  --scrollbarBG: #CFD8DC;
-  --thumbBG: #4dc23e70;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  scrollbar-width: auto;
-  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+main h3 {
+  margin-top: 40px;
+}
+
+main iframe,
+main blockquote,
+main p {
+  margin: 15px 0;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
 }
