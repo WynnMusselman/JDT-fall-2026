@@ -29,3 +29,11 @@ path {
     stroke-dashoffset: 0;
   }
 }
+
+body {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #4dc23e70;
+
+  scrollbar-width: auto;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
