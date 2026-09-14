@@ -4,10 +4,19 @@
     box-sizing: border-box;
 }
 
+#img-wrapper{
+    position: relative;
+}
+
 #headshot-img{
     max-width: 15vw;
-    position: relative;
-    left: 30px;
+    position: absolute;
+
+    /* combined with margin: auto, this centers the image */
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 path {
