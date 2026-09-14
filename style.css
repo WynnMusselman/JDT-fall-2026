@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+header{
+    text-align: center;
+    margin: 3%;
+}
+
 #img-wrapper{
     position: relative;
 }
@@ -45,12 +50,20 @@ body {
   padding: 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding: 20px 0;
+nav ul{
+    padding-left:0;
+    list-style: none;
+    text-align: center;
+
+    margin: 2%;
 }
+
+nav ul li{
+    display: inline;
+    padding: 2%;
+}
+
+
 
 main h3 {
   margin-top: 40px;
