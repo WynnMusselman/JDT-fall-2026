@@ -1,10 +1,10 @@
-/* universal selector */
+/* universal selector - needed on every page. basically overwrites the styling set by the browser*/
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
-/* code fo all pages */
+/* code for all pages */
 
 body {
   margin: auto;
@@ -16,11 +16,11 @@ header{
     margin: 3%;
 }
 
+/* creates a horizontal nav */
 nav ul{
     padding-left:0;
     list-style: none;
     text-align: center;
-
     margin: 2%;
 }
 
