@@ -4,11 +4,39 @@
     box-sizing: border-box;
 }
 
+/* code fo all pages */
+
+body {
+  margin: auto;
+  width: 90%;
+}
+
 header{
     text-align: center;
     margin: 3%;
 }
 
+nav ul{
+    padding-left:0;
+    list-style: none;
+    text-align: center;
+
+    margin: 2%;
+}
+
+nav ul li{
+    display: inline;
+    padding: 2%;
+}
+
+footer {
+  margin: 2%;
+}
+
+
+/* CODE FOR HOME PAGE */
+
+/* when using position absolute, the parent should be position relative!! */
 #img-wrapper{
     position: relative;
 }
@@ -29,10 +57,10 @@ path {
   stroke-dashoffset: 1;
 
   /* Draw once and done. */
-  /* animation: dash 5s linear forwards; */
+  animation: dash 5s linear forwards;
 
   /* Keep drawing */
-  animation: dash 5s ease-in-out infinite alternate;
+  /* animation: dash 5s ease-in-out infinite alternate; */
 }
 
 @keyframes dash {
@@ -44,38 +72,15 @@ path {
   }
 }
 
-body {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-nav ul{
-    padding-left:0;
-    list-style: none;
-    text-align: center;
-
-    margin: 2%;
-}
-
-nav ul li{
-    display: inline;
-    padding: 2%;
-}
-
-
+/* CODE FOR PROJECTS */
 
 main h3 {
-  margin-top: 40px;
+  margin: 3% 0; /*short hand for saying margin-top/bottom: 3%, margin-left/right: 0*/
 }
 
 main iframe,
 main blockquote,
 main p {
   margin: 15px 0;
-}
-
-footer {
-  margin-top: 40px;
-  padding: 20px 0;
 }
