@@ -84,3 +84,49 @@ main blockquote,
 main p {
   margin: 15px 0;
 }
+
+/* Light mode (default) */
+body {
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 3rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+/* Optional button styling */
+button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button {
+  background-color: #fff;
+  color: #111;
+}
+
+/* Optional heading and paragraph styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
