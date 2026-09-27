@@ -6,6 +6,7 @@
         <title>Projects | My Portfolio</title> <!--adds a title to the tab. should be in current page | website name format-->
         <link rel="stylesheet" href="style.css">
     </head>
+    <script src="app.js"></script>
     <body>
         <!-- header, nav, main, and footer tags are needed to divide the page into chunks and have good SEO -->
 
@@ -20,7 +21,7 @@
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "projects.html">Projects</a></li>
-                <li><a href = ""></a>Professional Experience</li>
+                <li><a href = "professional.html">Professional Experience</a></li>
                 <li><a href = ""></a>Activities</li>
                 <li><a href = ""></a>Education</li>
             </ul>
@@ -29,6 +30,11 @@
         <!-- main -->
         <main>
             <h2>Projects</h2>
+
+            <!-- adds scrolling text -->
+            <div id = "scrolling-wrapper">
+                <p class = "scrolling-line"></p>
+            </div>
 
             <h3><a href = "https://github.com/dashboard">My First Project</a></h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8-o6EbPPmr0?si=qI75X3Lz-Nq8_o3C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -48,6 +54,7 @@
 
         <!-- footer -->
         <footer>&copy; 2026 Your Name</footer>
+        
         
     </body>
 </html>

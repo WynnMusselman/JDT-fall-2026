@@ -1,4 +1,4 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -6,6 +6,7 @@
         <title>Home | My Portfolio</title> <!--adds a title to the tab. should be in current page | website name format-->
         <link rel="stylesheet" href="style.css">
     </head>
+    <script src="app.js"></script>
     <body>
         <!-- header, nav, main, and footer tags are needed to divide the page into chunks and have good SEO -->
 
@@ -20,7 +21,7 @@
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "projects.html">Projects</a></li>
-                <li><a href = ""></a>Professional Experience</li>
+                <li><a href = "professional.html">Professional Experience</a></li>
                 <li><a href = ""></a>Activities</li>
                 <li><a href = ""></a>Education</li>
             </ul>
@@ -64,7 +65,8 @@
             </div>
 
             <p>Hi! I am a student at Boston University. Welcome to my website. </p>
-            <button id="toggle-mode">Toggle Dark Mode</button>
+
+            <button onclick="modeToggle()" id="toggle-btn">Switch to Dark Mode</button>
         </main>
         
 

@@ -34,6 +34,21 @@ footer {
 }
 
 
+/* CODE FOR SCROLLING LINES OF TEXT */
+
+#scrolling-wrapper{
+    position: absolute;
+    opacity: 25%;
+    z-index: -1;
+}
+
+.scrolling-line{
+    animation: scroll 10s linear infinite;
+    white-space: nowrap; /* makes it so the lines of text don't wrap onto the next line when they run out of room. the text is all on one line*/
+    font: calc(2px + 5vw) monospace;
+}
+
+
 /* CODE FOR HOME PAGE */
 
 /* when using position absolute, the parent should be position relative!! */
@@ -89,9 +104,6 @@ main p {
 body {
   background-color: #f2f2f2;
   color: #1a1a1a;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 3rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -103,14 +115,10 @@ body.dark-mode {
 
 /* Optional button styling */
 button {
-  padding: 1rem 2rem;
-  border: none;
   border-radius: 8px;
   background-color: #111;
   color: #fff;
   cursor: pointer;
-  font-size: 1rem;
-  margin-top: 2rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -119,14 +127,9 @@ body.dark-mode button {
   color: #111;
 }
 
-/* Optional heading and paragraph styling */
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
+canvas {
+  width: 100%;
+  background-image: url("src/buildathon.JPG");
+  background-size: cover;
+  background-position: center;
 }
