@@ -37,7 +37,7 @@ footer {
 /* CODE FOR SCROLLING LINES OF TEXT */
 
 #scrolling-wrapper{
-    position: absolute;
+    /* position: absolute; */
     opacity: 25%;
     z-index: -1;
 }
@@ -48,6 +48,14 @@ footer {
     font: calc(2px + 5vw) monospace;
 }
 
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
 
 /* CODE FOR HOME PAGE */
 

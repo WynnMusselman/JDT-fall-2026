@@ -18,7 +18,7 @@ function modeToggle(){
   window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
 
   var canvas = document.querySelector("canvas");
-  canvas.width = window.innerWidth
+  canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   var ctx = canvas.getContext("2d");
   ctx.globalCompositeOperation = "source-over";
@@ -83,36 +83,3 @@ function modeToggle(){
 
 })();
 
-
-// LINES OF SCROLLING TEXT
-
-const scrolling_wrapper = document.getElementById("scrolling-wrapper");
-const NUM_LINES = 8; //number of lines of text
-
-const TEXT_OPTIONS = ["HELLO WORLD", "WELCOME TO MY SITE", "MY PROJECTS"];
-const COLOR_OPTIONS = ["pink", "cyan", "orange"]
-
-// picks a random number 0-2 for both the binary string and color option arrays
-function get_rand_number(){
-    let rand_num = Math.floor(Math.random() * 3);
-    return rand_num;
-}
-
-function create_scrolling_str(){
-    for (let i = 0; i < NUM_LINES; i++){
-        const scrolling_str = document.createElement("p");
-        scrolling_str.className = "scrolling-line";
-
-        //controls the random color and random text for the scrolling lines
-        scrolling_str.textContent = binary_options[get_rand_number()];
-        scrolling_str.style.color = color_options[get_rand_number()];
-
-        // randomized spacing
-        scrolling_str.style.top = `${Math.floor(Math.random() * 20)}vh`;
-        // binary_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 20}s`;
-        // binary_str.style.zIndex = -1; //binary is at the very bottom of the z-index
-        
-        scrolling_wrapper.appendChild(scrolling_str); //adds to existing class
-    }
-}
-create_scrolling_str();
