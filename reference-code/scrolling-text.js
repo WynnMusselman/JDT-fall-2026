@@ -2,7 +2,7 @@
 // LINES OF SCROLLING TEXT
 
 const scrolling_wrapper = document.getElementById("scrolling-wrapper");
-const NUM_LINES = 8; //number of lines of text
+const NUM_LINES = 15; //number of lines of text
 
 const TEXT_OPTIONS = ["HELLO WORLD", "WELCOME TO MY SITE", "MY PROJECTS"];
 const COLOR_OPTIONS = ["pink", "cyan", "orange"];
@@ -22,11 +22,9 @@ function create_scrolling_str(){
         scrolling_str.textContent = TEXT_OPTIONS[get_rand_number()];
         scrolling_str.style.color = COLOR_OPTIONS[get_rand_number()];
 
-        // randomized spacing
-        scrolling_str.style.top = `${Math.floor(Math.random() * 20)}vh`;
-        scrolling_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 20}s`;
-        // binary_str.style.zIndex = -1; //binary is at the very bottom of the z-index
-        
+        //randomizes animation duration
+        scrolling_str.style.animationDuration = `${Math.floor(Math.random() * 40) + 10}s`;
+       
         scrolling_wrapper.appendChild(scrolling_str); //adds to existing class
     }
 }

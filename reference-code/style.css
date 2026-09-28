@@ -9,6 +9,10 @@
 body {
   margin: auto;
   width: 90%;
+
+  /* stops page from being scrollable horizontally */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header{
@@ -31,30 +35,6 @@ nav ul li{
 
 footer {
   margin: 2%;
-}
-
-
-/* CODE FOR SCROLLING LINES OF TEXT */
-
-#scrolling-wrapper{
-    /* position: absolute; */
-    opacity: 25%;
-    z-index: -1;
-}
-
-.scrolling-line{
-    animation: scroll 10s linear infinite;
-    white-space: nowrap; /* makes it so the lines of text don't wrap onto the next line when they run out of room. the text is all on one line*/
-    font: calc(2px + 5vw) monospace;
-}
-
-@keyframes scroll{
-    0%{
-        transform: translateX(100%);
-    }
-    100% { 
-        transform: translateX(-100%); 
-    }
 }
 
 /* CODE FOR HOME PAGE */
@@ -141,3 +121,36 @@ canvas {
   background-size: cover;
   background-position: center;
 }
+
+
+
+/* CODE FOR SCROLLING LINES OF TEXT */
+
+#scrolling-wrapper{
+    position: absolute;
+    opacity: 40%;
+    z-index: -1;
+}
+
+.scrolling-line{
+    animation: scroll 10s linear infinite;
+    white-space: nowrap; /* makes it so the lines of text don't wrap onto the next line when they run out of room. the text is all on one line*/
+    font: calc(2px + 5vw) monospace;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+main{
+    position: relative;
+}
+
+/* REMEMEBER TO ADD THIS TO MAIN */
+/* max-width: 100%;
+  overflow-x: hidden; */
