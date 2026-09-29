@@ -9,6 +9,10 @@
 body {
   margin: auto;
   width: 90%;
+
+  /* stops page from being scrollable horizontally */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header{
@@ -83,3 +87,92 @@ main blockquote,
 main p {
   margin: 15px 0;
 }
+
+
+
+
+
+/* CODE FOR BUTTON */
+
+/* Light mode (default) */
+
+body {
+
+  /* code added last workshop */
+  margin: auto;
+  width: 90%;
+
+  /* light mode colors */
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  transition: background-color 0.3s, color 0.3s;
+
+  /* stops page from being scrollable horizontally */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Dark mode */
+body .dark-mode {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+/* Optional button styling */
+button {
+  border-radius: 8px;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body .dark-mode button {
+  background-color: #fff;
+  color: #111;
+}
+
+
+/* FOR RAIN EFFECT */
+canvas {
+  width: 100%;
+  background-image: url("src/buildathon.JPG");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* CODE FOR SCROLLING LINES OF TEXT */
+
+/* 
+main{
+    position: ...;
+}
+
+#scrolling-wrapper{
+  position: ...;
+  opacity: 40%;
+  z-index: ...;
+}
+
+.scrolling-line{
+    animation: scroll 10s linear infinite;
+    white-space: nowrap; 
+    font: calc(2px + 5vw) monospace;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(100%);
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+
+
+
+
+ */
