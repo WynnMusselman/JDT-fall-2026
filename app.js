@@ -12,7 +12,7 @@ function modeToggle(){
 }
 
 
-// Rain effect
+// RAIN EFFECT
 (function(){
 
   window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
