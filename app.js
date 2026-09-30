@@ -1,5 +1,5 @@
 // DARK MODE TOGGLE BUTTON
-const toggleBtn = //...
+const toggleBtn = document.getElementById("toggle-btn");
 
 function modeToggle(){
     document.body.classList.toggle('dark-mode');

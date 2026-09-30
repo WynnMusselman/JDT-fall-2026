@@ -113,7 +113,7 @@ body {
 }
 
 /* Dark mode */
-body .dark-mode {
+body.dark-mode {
   background-color: #121212;
   color: #f9f9f9;
 }
@@ -127,7 +127,7 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body .dark-mode button {
+body.dark-mode button {
   background-color: #fff;
   color: #111;
 }
@@ -145,15 +145,15 @@ canvas {
 
 /* CODE FOR SCROLLING LINES OF TEXT */
 
-/* 
+
 main{
-    position: ...;
+    position: relative;
 }
 
 #scrolling-wrapper{
-  position: ...;
+  position: absolute;
   opacity: 40%;
-  z-index: ...;
+  z-index: -1;
 }
 
 .scrolling-line{
@@ -175,4 +175,4 @@ main{
 
 
 
- */
+
